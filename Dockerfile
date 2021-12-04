@@ -1,14 +1,21 @@
-FROM continuumio/miniconda3
+FROM ubuntu:20.04
 
 WORKDIR /app
 
-# Create the environment:
+RUN apt update
+
+RUN apt-get install -y tzdata
+RUN echo "America/Sao_Paulo" > /etc/timezone    
+RUN dpkg-reconfigure -f noninteractive tzdata
+
+RUN apt install curl git wget python3-pip tesseract-ocr -y
+
 COPY . .
-RUN conda env create -f environment.yml
 
-# Activate the environment, and make sure it's activated:
-RUN conda activate appPDF
+RUN pip3 install -r requirements.txt
 
-# The code to run when container is started:
+RUN apt install ocrmypdf -y
+
 EXPOSE 9000
-ENTRYPOINT ["python3", "main.py"]
+
+CMD ["python3", "main.py"]

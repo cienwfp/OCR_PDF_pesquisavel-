@@ -6,17 +6,17 @@ chardet==4.0.0
 click==8.0.3
 coloredlogs==15.0.1
 cryptography==36.0.0
-Flask @ file:///tmp/build/80754af9/flask_1634118196080/work
+Flask==2.0.2
 Flask-Cors==3.0.10
 Flask-RESTful==0.3.9
 fpdf==1.7.2
 fs==2.4.14
 humanfriendly==10.0
 img2pdf==0.4.3
-itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
-Jinja2 @ file:///tmp/build/80754af9/jinja2_1635780242639/work
+itsdangerous==2.0.1
+Jinja2==3.0.3
 lxml==4.6.4
-MarkupSafe @ file:///tmp/build/80754af9/markupsafe_1621523467000/work
+MarkupSafe==2.0.1
 ocrmypdf==12.7.2
 pdf2image==1.16.0
 pdfminer.six==20211012
@@ -26,9 +26,8 @@ Pillow==8.4.0
 pluggy==1.0.0
 pycparser==2.21
 pycryptodome==3.11.0
-pytesseract==0.3.8
 pytz==2021.3
 reportlab==3.6.3
 six==1.16.0
 tqdm==4.62.3
-Werkzeug @ file:///tmp/build/80754af9/werkzeug_1635505089296/work
+Werkzeug 
