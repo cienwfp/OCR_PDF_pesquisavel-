@@ -1,3 +1,8 @@
+"""
+Autor: cienwfp
+Data: 07/12/2021
+"""
+
 import os
 import io
 from flask import Flask, flash, request, send_file, Response
