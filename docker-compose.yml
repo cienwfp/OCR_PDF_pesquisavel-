@@ -5,7 +5,7 @@ services:
     container_name: appPDF
     build: .
     ports:
-      - "9000:9000"
+      - "<port:port>"
     volumes:
-      - /home/dgbe/Documents/save:/app/save
+      - ${PWD}:/app/save
     

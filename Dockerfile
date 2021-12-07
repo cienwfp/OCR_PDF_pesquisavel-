@@ -16,6 +16,6 @@ RUN pip3 install -r requirements.txt
 
 RUN apt install ocrmypdf -y
 
-EXPOSE 9000
+EXPOSE <port>
 
 CMD ["python3", "main.py"]
