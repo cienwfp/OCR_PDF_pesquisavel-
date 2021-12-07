@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:  
+  apppdf:
+    container_name: appPDF
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - /home/dgbe/Documents/save:/app/save
+    
